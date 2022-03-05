@@ -1,0 +1,52 @@
+<div class="pdisplay d-flex flex-wrap">
+    <div *ngFor="let a of data">
+        <div class="card" style="width: 18rem;"
+            (click)="ProductDetails(a.brand,a.sku,a.name,a.color,a.price,a.category,a.image,a.discription)">
+            <img class="card-img-top" src="{{a.image}}" alt="{{a.name}}">
+            <div class="card-body">
+                <h4 class="card-title">{{a.brand}}</h4>
+                <p class="card-text">
+                    <li class="cardname">{{a.name}}</li>
+                    <li>Price : {{a.price}}</li>
+                </p>
+                <a class="btn btn-primary">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="productDetails" *ngIf="isCollapsed">
+    <!-- *ngIf="isCollapsed" -->
+    <div class="top d-flex justify-content-end">
+        <i class="fa fa-times-circle" style="font-size:xx-large;" (click)="close()"></i>
+    </div>
+    <div class="bottom d-flex">
+        <img class="left card-img" src="{{productdetails.image}}" alt="{{productdetails.name}}">
+        <div class="data right">
+            <div class="righttop d-flex flex-column">
+                <span class="card-brand"><b>{{productdetails.brand}}</b></span>
+                <span>{{productdetails.name}}</span>
+                <span style="font-size:xx-large;"><b>Rs : {{productdetails.price}}</b></span>
+                <span>Size : &nbsp;
+                    <!-- <i class="fa">S</i>
+                    <i class="fa">M</i>
+                    <i class="fa">L</i>
+                    <i class="fa">XL</i>
+                    <i class="fa">XXL</i> -->
+                    <i class="fa border sizeicon" (click)="size(6)"><b>6</b></i>&nbsp;
+                    <i class="fa border sizeicon" (click)="size(7)"><b>7</b></i>&nbsp;
+                    <i class="fa border sizeicon" (click)="size(8)"><b>8</b></i>&nbsp;
+                    <i class="fa border sizeicon" (click)="size(9)"><b>9</b></i>&nbsp;
+                    <i class="fa border sizeicon"
+                        (click)="size(10)"><b>10</b></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-warning">Add to Cart</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-light">Buy Now</button>
+                </span>
+            </div>
+            <div class="rightbottom">
+                <span>Product Description : <br>{{productdetails.discription}}</span>
+            </div>
+        </div>
+    </div>
+</div>

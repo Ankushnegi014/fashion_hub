@@ -1,0 +1,93 @@
+<div class="main">
+    <div class="banner">
+        <!-- <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/images/c3shirts.jpg" alt="Random first slide" class="w-100">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/images/c2jeans.jpg" alt="Random second slide" class="w-100">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/images/c1sheos.png" alt="Random third slide" class="w-100">
+                </div>
+            </ng-template>
+        </ngb-carousel> -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/c3shirts.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/c2jeans.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/c1sheos.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <h1 class="heading" id="category"><b>Shop By Categories</b></h1>
+    <div class="category d-flex flex-row flex-wrap">
+        <div class="catoption">
+            <img src="assets/images/c3shirts.jpg" class="card-img-top" alt="" routerLink="shirt">
+            <h4>Shirt</h4>
+        </div>
+        <div class="catoption">
+            <img src="assets/images/tshirt.jpeg" class="card-img-top" alt="" routerLink="tshirt">
+            <h4>T-shirt</h4>
+        </div>
+        <div class="catoption">
+            <img src="assets/images/sheos.jpeg" class="card-img-top" alt="" routerLink="sheos">
+            <h4>Sheos</h4>
+        </div>
+        <div class="catoption">
+            <img src="assets/images/jeans.jpeg" class="card-img-top" alt="" routerLink="jeans">
+            <h4>Jeans</h4>
+        </div>
+        <div class="catoption">
+            <img src="assets/images/lower.jpeg" class="card-img-top" alt="" routerLink="lower">
+            <h4>Lower</h4>
+        </div>
+        <div class="catoption">
+            <img src="assets/images/chappal.jpeg" class="card-img-top" alt="" routerLink="chappal">
+            <h4>Chappal</h4>
+        </div>
+    </div><br><br>
+    <h1 class="heading"><b> Shop By Category </b></h1><br><br>
+    <div class="brand d-flex flex-wrap">
+        <a routerLink="brand/levis"><img class="brand-img" src="assets/logo/levis.png" alt="Levis"></a>
+        <a routerLink="brand/nike"><img class="brand-img" src="assets/logo/nike.png" alt="Nike"></a>
+        <a routerLink="brand/roadstar"><img class="brand-img" src="assets/logo/Roadster.jpg" alt="Roadstar"></a>
+        <a routerLink="brand/puma"><img class="brand-img" src="assets/logo/puma.jpg" alt="Puma"></a>
+        <a routerLink="brand/hrx"><img class="brand-img" src="assets/logo/hrx.png" alt="HRX"></a>
+        <a routerLink="brand/calvinklein"><img class="brand-img" src="assets/logo/calvin-klein.jpg" alt="Calvin Klein"></a>
+        <a routerLink="brand/vanheusen"><img class="brand-img" src="assets/logo/vanheusen.png" alt="VAN HEUSEN"></a>
+        <a routerLink="brand/redtape"><img class="brand-img" src="assets/logo/redtape.png" alt="Red Tape"></a>
+        <a routerLink="brand/uspolo"><img class="brand-img" src="assets/logo/uspolo.png" alt="U.S. Polo"></a>
+        <a routerLink="brand/tommyhilfiger"><img class="brand-img" src="assets/logo/tommy-hilfiger.png" alt="Tommy Hilfiger"></a>
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="formcont">
+    <h3>Add Product</h3>
+    <form [formGroup]="editproduct">
+        <div class="form-group">
+            <label class="form-label">Category : </label>
+            <select class="form-control" formControlName="category">
+                <option>tshirt</option>
+                <option>shirt</option>
+                <option>jeans</option>
+                <option>lowers</option>
+                <option>sheos</option>
+                <option>chappal</option>
+            </select>
+        </div>
+        <label class="form-label">SKU : </label>
+        <input class="form-control" type="text" formControlName="sku">
+        <label class="form-label">Brand : </label>
+        <input class="form-control" type="text" formControlName="brand">
+        <label class="form-label">Name : </label>
+        <input class="form-control" type="text" formControlName="name">
+        <label class="form-label">Colour</label>
+        <input class="form-control" type="text" formControlName="color">
+        <label class="form-label">Price : </label>
+        <input class="form-control" type="text" formControlName="price">
+        <label class="form-label">Image URL : </label>
+        <input class="form-control" type="text" formControlName="image">
+        <label class="form-label">Description : </label>
+        <input class="form-control" type="text" formControlName="description"><br>
+        <button class="btn btn-light" (click)="EditData()">Save</button>
+    </form>
+</div>

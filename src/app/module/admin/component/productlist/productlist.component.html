@@ -1,0 +1,26 @@
+<div class="container">
+    <h2 class="tableheading">Product List</h2>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>SKU</th>
+            <th>Brand</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Colour</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let a of productList">
+            <td>{{a.category}}</td>
+            <td>{{a.sku}}</td>
+            <td>{{a.brand}}</td>
+            <td>{{a.name}}</td>
+            <td>{{a.price}}</td>
+            <td>{{a.color}}</td>
+            <td class="icon d-flex">
+                <i class="fa fa-pencil-square" routerLink="/edit/{{a.id}}"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-trash" (click)="removeItem(a.id)"></i>
+            </td>
+        </tr>
+    </table>
+</div>

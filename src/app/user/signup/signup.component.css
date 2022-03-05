@@ -1,0 +1,49 @@
+.example-form{
+    color: black;
+    background-color: rgb(172, 165, 165);
+}
+.form-text{
+    color: red;
+    opacity: 0.8;
+}
+input.ng-dirty.ng-invalid {
+  color: red
+}
+.alert{
+    width:100%
+}
+
+.form-control,.form-select{
+    border: 0;
+    border-bottom: 2px solid #196C73;
+    border-radius: 0;
+}
+.formcontainer{
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #0d6276;
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.signbtn{
+    text-align: center;
+}
+.signbtn button{
+    width: 180px;
+    border: 2px solid #196C73;
+}
+.formheader{
+    text-align: center;
+}
+.signheader{
+    font-weight: bold;
+    font-size: 40px;
+    color: #196C73;
+}

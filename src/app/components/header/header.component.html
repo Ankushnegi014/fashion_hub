@@ -1,0 +1,110 @@
+<nav class="header navbar navbar-expand-lg navbar-light bg-info" *ngIf="userheader">
+    <a class="navbar-brand" routerLink="/">Fashion HuB</a>
+    <button class="navbar-toggler" type="button" (click)="resnav()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbaar collapse navbar-collapse d-flex justify-content-between align-items-center">
+        <ul class=" flex-grow navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="navhover nav-link text-dark" routerLink="/product">Product</a>
+            </li>
+            <li class="nav-item active">
+                <div class="row">
+                    <div class="col">
+                        <div ngbDropdown class="d-inline-block">
+                            <button class="btn navhover" id="dropdownBasic1" style="font-size: 20px;" ngbDropdownToggle>Categories</button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem><a class="dropdown-item" routerLink="/tshirt">T-Shirts</a></button>
+                                <button ngbDropdownItem><a class="dropdown-item" routerLink="/shirt">Shirts</a></button>
+                                <button ngbDropdownItem><a class="dropdown-item" routerLink="/jeans">Jeans</a></button>
+                                <button ngbDropdownItem><a class="dropdown-item" routerLink="/lower">Lower</a></button>
+                                <button ngbDropdownItem><a class="dropdown-item" routerLink="/chappal">Chappal</a></button>
+                                <button ngbDropdownItem><a class="dropdown-item" routerLink="/sheos">Sheos</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="rightnav navbar-nav" *ngIf="isloggedin">
+            <div class="navhover icons profile">
+                <i class="fa fa-user" style="font-size: larger;"></i>
+                <span>{{username}}</span>
+            </div>
+            <div class="navhover icons wish">
+                <i class="fa fa-heart" style="font-size: larger;"></i>
+                <span>Wish</span>
+            </div>
+            <div class="navhover icons cart">
+                <i class="fa fa-opencart" style="font-size: larger;"></i>
+                <span>Cart</span>
+            </div>
+            <div class="navhover icons cart">
+                <i class="logoutbtn" (click)="logout()">Log Out</i>
+            </div>
+        </div>
+        <div class="rightnav navbar-nav" *ngIf="!isloggedin">
+            <div class="navhover profile">
+                <span routerLink="/login">LogIn</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="buttontag" *ngIf="resnavbutton">
+    <ul class="mr-auto">
+        <li><a class="navhover nav-link text-dark" routerLink="/product">Product</a></li>
+        <li><div class="row">
+            <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn navhover" id="dropdownBasic1" style="font-size: 20px;"
+                        ngbDropdownToggle>Categories</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem><a class="dropdown-item" routerLink="/tshirt">T-Shirts</a></button>
+                        <button ngbDropdownItem><a class="dropdown-item" routerLink="/shirt">Shirts</a></button>
+                        <button ngbDropdownItem><a class="dropdown-item" routerLink="/jeans">Jeans</a></button>
+                        <button ngbDropdownItem><a class="dropdown-item" routerLink="/lower">Lower</a></button>
+                        <button ngbDropdownItem><a class="dropdown-item" routerLink="/chappal">Chappal</a></button>
+                        <button ngbDropdownItem><a class="dropdown-item" routerLink="/sheos">Sheos</a></button>
+                    </div>
+                </div>
+            </div>
+        </div></li>
+        <div *ngIf="isloggedin">
+            <li><a class="navhover nav-link text-dark" routerLink="/product">Product</a></li>
+            <li><a class="navhover nav-link text-dark" routerLink="#">Profile</a></li>
+            <li><a class="navhover nav-link text-dark" routerLink="#">Wish</a></li>
+            <li><a class="navhover nav-link text-dark" routerLink="#">Cart</a></li>
+            <li><a class="navhover nav-link text-dark" routerLink="#" (click)="logout()">Log Out</a></li>
+        </div>
+        <div *ngIf="!isloggedin">
+            <li><a class="navhover nav-link text-dark" routerLink="/login">LogIn</a></li>
+        </div>
+    </ul>
+</div>
+
+<!-- **************************ADMIN Header************************** -->
+
+
+<div *ngIf="adminheader">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="admin">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" [routerLink]="['admin/addproduct']">Add Product</a>
+                    <a class="nav-link" routerLink="admin/productlist">Product List</a>
+                    <a class="nav-link" routerLink="admin/userlist">Users</a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="/user" (click)="adminlogout()">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

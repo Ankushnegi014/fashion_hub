@@ -1,0 +1,21 @@
+.form-control{
+    width: 80%;
+}
+.formcont{
+    width: 50%;
+    background-color: rgba(211, 208, 208, 0.748);
+    margin: 22px 5px 35px 35px;
+}
+form{
+    margin: 20px;
+    margin-top: 20px;
+}
+.btn{
+    margin-bottom: 20px;
+}
+.formcont h3{
+    text-align: center;
+}
+.error{
+    color:red;
+}

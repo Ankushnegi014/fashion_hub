@@ -1,0 +1,61 @@
+.card{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card-body{
+    height: 1.5em;
+    padding: 0;
+    text-align: center;
+    background: none;
+}
+.card-title{
+    margin-top: 0;
+}
+.carousel-item img{
+    height: 500px;
+}
+.category .card{
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.category .card img{
+    border-radius: 50%;
+}
+.brand-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.brand a{
+    margin: 20px;
+}
+.brand{
+    background-color: grey;
+    padding: 2%;
+    padding-left: 2%;
+}
+.catoption{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.catoption img{
+    height: 200px;
+    width: 200px;
+    border-radius: 2%;
+    cursor: pointer;
+}
+.catoption h4{
+    position: relative;
+    top: -30px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.809);;
+}
+.heading{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 50px;
+}

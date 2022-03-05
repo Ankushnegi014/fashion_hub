@@ -1,0 +1,73 @@
+input.ng-invalid {
+  color: 4px solid red
+}
+.form-text{
+    color: red;
+}
+.container{
+  width: 70%;
+  height: 400px;
+  display: flex;
+  padding: 0;
+  border: 2px solid rgb(0, 174, 255);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+.logocont{ 
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #196C73;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  color: white;
+ }
+
+.formcont{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+  border-radius: 14px;
+  padding: 0px 15px 0px 15px;
+}
+.logo{
+  color:rgb(11, 125, 177);
+}
+
+.formcont h2{
+  margin: 5px 0px 5px 0px;
+  text-align: center;
+}
+.form-control{
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid  #196C73;
+}
+.signuplink{
+  width: 100%;
+}
+.logbtn{
+  text-align: center;
+}
+.logbtn .btn{
+  width: 40%;
+  color: #196C73;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 2px solid #196C73;
+}
+.logocont h2{
+  font-weight: bolder;
+  font-size: 40px;
+}
+.signupbtn{
+  color: blue;
+  font-size: large;
+  cursor: pointer;
+}

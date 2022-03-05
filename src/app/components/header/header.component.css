@@ -1,0 +1,51 @@
+.header{
+    max-width: 100%;
+    font-size: 20px;
+}
+.rightnav{
+    margin-right: 10px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+.navhover:hover{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 5px;
+}
+.icons span{
+    font-size: 10px;
+    font-weight: bold;
+}
+.profile{
+    cursor: pointer;
+}
+.logoutbtn{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 900px) {
+  body{
+      width: 100%;
+  }
+  .navbaar{
+      display: none !important;
+  }
+  .buttontag{
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+  }
+  .navhover{
+      font-size: larger;
+      font-weight: bold;
+  }
+}

@@ -1,0 +1,59 @@
+
+.card{
+    margin-top: 20px;
+}
+.productDetails{
+    background-color: rgba(0, 0, 0, 0.898);
+    position: fixed;
+    height: 90vh;
+    width: 80%;
+    top:9%;
+    left: 10%;
+    right:0;
+}
+.fa-times-circle{
+    color: whitesmoke;
+    cursor: pointer;
+}
+.card-img{
+    height: 480px;
+    width: 300px;
+    margin-left: 2%;
+}
+.data{
+    color: white;
+}
+.right{
+    width: 65%;
+    /* height: 100%; */
+    margin-left: 2%;
+}
+.righttop{
+    height: 40%;    
+    padding: 2%;
+}
+
+.rightbottom{
+    height: 60%;
+    padding:2%;
+}
+.card-brand{
+    font-size: 30px;
+}
+.sizeicon{
+    padding: 5px;
+}
+.card{
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-height: 650px;
+}
+.cardname{
+    min-height: 50px;
+    max-height: 70px;
+}
+.card-title{
+    min-height: 60px;
+    max-height: 90px;
+}

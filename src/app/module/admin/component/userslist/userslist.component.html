@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 class="tableheading">Users List</h2>
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let a of userData; let i=index ;">
+            <td>{{i+1}}</td>
+            <td>{{a.email}}</td>
+            <td>{{a.firstName}} {{a.lastName}}</td>
+            <td>{{a.status}}</td>
+            <td>{{a.role.roleType}}</td>
+            <td class="icon d-flex" *ngIf="a.role.roleType=='client'">
+                <i class="fa fa-pencil-square" routerLink="/updateuser/{{a._id}}/{{i}}"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-trash" (click)="removeItem(a._id)" ></i>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,5 @@
+<label class="image-upload-container btn btn-bwm">
+    <img [src]="imageurl" alt="" height="100px" width="100px">
+    <span>Select Image</span>
+    <input #imageInput type="file" accept="image/*" (change)="onselect($event)">
+</label>
